@@ -32,4 +32,3 @@ for a, b in mylist1:
 del wb['Sheet']
 wb.save(filename=name + '.xlsx')
 print(f'File {name}.xlsx created')
-#C:\\Users\\Ayush\\Documents\\Zoom\\2020-05-04 18.00.39 Abhishek Kushwaha's Personal Meeting Room 5310595525\\meeting_saved_chat.txt

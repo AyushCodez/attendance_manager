@@ -1,5 +1,5 @@
 # Attendance manager
-This code was created to read froma zoom chatbox and return an excel sheet of the identification number and name to mark attendance
+This code was created to read from a zoom chatbox and return an excel sheet of the identification number and name to mark attendance.
 
 The data entered into the chat has to be in the form 'identification number_name' or 'identification number-name' to be recognised. Each participant can enter this when they join the call.
 

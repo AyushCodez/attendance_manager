@@ -11,9 +11,11 @@ for dial in data:
         mylist.append(dial[dial.index(' : ') + 2:])
 
 for dial in mylist:
-    if '000' in dial and '_' in dial:
-        mylist1.append((dial[dial.index('000'):dial.index('_')], dial[dial.index('_') + 1:]))
-
+    if '000' in dial:
+        if '_' in dial:
+            mylist1.append((dial[dial.index('000'):dial.index('_')], dial[dial.index('_') + 1:]))
+        if '-' in dial:
+            mylist1.append((dial[dial.index('000'):dial.index('-')], dial[dial.index('-') + 1:]))
 wb = openpyxl.Workbook()
 name = input('what do you want to save the excel file as? ')
 date = input('what is the date of attendance?(DD-MM-YYYY) ')
